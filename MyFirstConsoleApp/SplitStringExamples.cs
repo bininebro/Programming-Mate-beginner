@@ -15,6 +15,6 @@ namespace MyFirstConsoleApp
         }
 
         // count goes here
-        //
+        // out put option goes here
     }
 }
