@@ -2,7 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/MyFirstConsoleApp/.vs/MyFirstConsoleApp/DesignTimeBuild/.dtbcache.v2
-/MyFirstConsoleApp/.vs/MyFirstConsoleApp/v17/.futdcache.v1
-/MyFirstConsoleApp/.vs/MyFirstConsoleApp/v17/.suo
-/MyFirstConsoleApp/.vs/
+
+/.vs/MyFirstConsoleApp/*

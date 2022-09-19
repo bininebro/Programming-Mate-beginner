@@ -31,6 +31,7 @@ namespace MyFirstConsoleApp
             }
         }
 
+        //if the text is short it will cause an issue
         public string SubStringWithLegth(string text)
         {
             string finalstring;
@@ -40,6 +41,7 @@ namespace MyFirstConsoleApp
 
 
         // find the index with index of
+        // if the idex do not exist it will throw an issue
         public string SubStringWithIndex(string text)
         {
             string finalstring;
@@ -49,7 +51,7 @@ namespace MyFirstConsoleApp
         }
 
         // find the index and the last index and also escape charcters
-        public string SubStringWithIndexs(string text)
+        public string SubStringWithIndexes(string text)
         {
             string finalstring;
             int index = text.IndexOf("\"");
