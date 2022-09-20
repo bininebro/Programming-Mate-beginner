@@ -4,3 +4,5 @@
 
 
 /.vs/MyFirstConsoleApp/*
+/MyFirstConsoleApp/obj/*
+/MyFirstConsoleApp/bin/*

@@ -46,8 +46,12 @@ namespace MyFirstConsoleApp
         {
             string finalstring;
             int index = text.IndexOf(",");
-            finalstring = text.Substring(index);
-            return finalstring;
+            if (index > 0)
+            {
+                finalstring = text.Substring(index +1);
+                return finalstring;
+            }
+            return null;
         }
 
         // find the index and the last index and also escape charcters
@@ -56,9 +60,13 @@ namespace MyFirstConsoleApp
             string finalstring;
             int index = text.IndexOf("\"");
             int endIndex = text.LastIndexOf("\"");
-            int lenght = endIndex - index;
-            finalstring = text.Substring(index, lenght);
-            return finalstring;
+            int length = endIndex - index;
+            if (length > 0)
+            {
+                finalstring = text.Substring(index, length);
+                return finalstring;
+            }
+            return null;
         }
     }
 }
