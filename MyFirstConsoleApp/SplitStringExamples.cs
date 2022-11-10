@@ -14,7 +14,19 @@ namespace MyFirstConsoleApp
             return splited;
         }
 
-        // count goes here
+
+        public string[] SplitCount(string Text)
+        {
+            string[] splited = Text.Split(" ",2, StringSplitOptions.None);
+            return splited;
+        }
         // out put option goes here
+
+        public string[] SplitMultipleCharcters(string Text)
+        {
+            string[] splitarray = { " ", ",", "[", "]" ,".","&"};
+            string[] splited = Text.Split(splitarray, StringSplitOptions.None);
+            return splited;
+        }
     }
 }

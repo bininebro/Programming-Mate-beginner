@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +31,7 @@ namespace MyFirstConsoleApp
             }
             catch(Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.Write(ex.Message);
                 return 0;
             }
         }
@@ -52,12 +53,12 @@ namespace MyFirstConsoleApp
             }
         }
 
-        public int ConvertIntTryCatch(string text)
+        public int ConvertInt(string text)
         {
 
             int conveted;
 
-            conveted = Convert.ToInt32(text);  //Convet will return zero if it fails
+            conveted = Convert.ToInt32(text);  //Convert will cause error if it is not a number
             return conveted;
         }
 
@@ -80,7 +81,39 @@ namespace MyFirstConsoleApp
 
         }
 
-        //Number Style goes here
 
+
+        public int ParseNumberStyle(string text)
+        {
+            try
+            {
+                int conveted;
+
+                conveted = Int32.Parse(text, NumberStyles.AllowCurrencySymbol);
+                return conveted;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+
+        }
+        public int ParseNumberStyleAllowParentheses(string text)
+        {
+            try
+            {
+                int conveted;
+
+                conveted = Int32.Parse(text, NumberStyles.AllowParentheses);
+                return conveted;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+
+        }
     }
 }

@@ -19,7 +19,17 @@ namespace MyFirstConsoleApp
 
         public string UsingStringInterpulation(string firstTest, string secondText)
         {
-            return $"this is a concatnated text {firstTest}  {secondText}";
+            return $"this is a concatnated text {firstTest} {secondText}";
+        }
+
+        public string StringInterpulationObjects(string firstTest)
+        {
+            return $"this is a concatnated text {firstTest} {DateTime.UtcNow.ToString()}";
+        }
+
+        public string StringInterpulationNewline(string firstTest, string secondText)
+        {
+            return $"this is a concatnated text\t {firstTest}\n{secondText}";
         }
     }
 }
