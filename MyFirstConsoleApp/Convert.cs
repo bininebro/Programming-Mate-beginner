@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyFirstConsoleApp
 {
-    internal class Convert
+    internal class ConvertByteToString
     {
     }
 }

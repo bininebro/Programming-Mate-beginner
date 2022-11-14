@@ -51,7 +51,7 @@ namespace MyFirstConsoleApp
                 finalstring = text.Substring(index +1);
                 return finalstring;
             }
-            return null;
+            return String.Empty;
         }
 
         // find the index and the last index and also escape charcters
@@ -66,7 +66,7 @@ namespace MyFirstConsoleApp
                 finalstring = text.Substring(index, length);
                 return finalstring;
             }
-            return null;
+            return String.Empty;
         }
     }
 }
