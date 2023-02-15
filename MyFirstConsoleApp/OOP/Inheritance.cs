@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstConsoleApp
+namespace MyFirstConsoleApp.OOP
 {
-    public class FormateDatetime
+    internal class Inheritance
     {
-        //Half ha adha 
     }
 }
